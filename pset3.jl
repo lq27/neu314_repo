@@ -19,7 +19,7 @@ extractRGB() reads in a file, named "filename" in the working directory, using
     channels are extracted from the 4d matrix of values corresponding to the
     image file. Red is assumed to be the 1st value of the 3rd dimension, green
     the 2nd, and blue the 3rd.
-    
+
 Args:
    filename (string): Name of image file.
 
@@ -46,3 +46,5 @@ end
 red = extractRGB("el-capitan.png")[1];
 green = extractRGB("el-capitan.png")[2];
 blue = extractRGB("el-capitan.png")[3];
+
+println("Reset with git reset --mixed");
