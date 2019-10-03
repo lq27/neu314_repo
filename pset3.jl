@@ -48,3 +48,18 @@ green = extractRGB("el-capitan.png")[2];
 blue = extractRGB("el-capitan.png")[3];
 
 println("Reset with git reset --mixed");
+
+image2 = copy(image);
+image2[:,:,1] = green;
+image2[:,:,2] = blue;
+image2[:,:,3] = red;
+
+subplot(1,2,1)
+imshow(image);
+axis("off")
+title("El Capitan: Original")
+
+subplot(1,2,2)
+imshow(image2);
+axis("off")
+title("El Capitan: GBR shifted")
